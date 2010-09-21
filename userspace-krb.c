@@ -17,7 +17,7 @@ MODULE_AUTHOR( "David Kaplan");
 static struct proc_dir_entry *proc_entry;
 
 int krb_write( struct file *fp, const char __user *buf,
-                   unsigned long len, void *data )
+               unsigned long len, void *data )
 {
     int res = len;
     char *msg = kmalloc( len + 1, GFP_ATOMIC );
